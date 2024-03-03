@@ -5,11 +5,28 @@
 Install dependencies,
 
 ```bash
-$ yarn
+$ npm install degit -g
+$ npx degit layitf/template-umi4
 ```
 
 Start the dev server,
 
 ```bash
-$ yarn start
+$ npm start
 ```
+
+```diff
+# package.json
+-  "gitHooks": {
+-    "pre-commit": "lint-staged"
+-  },
+```
+
+or
+
+```bash
+git commit -m "" --no-verify
+git commit -m "" -n
+
+```
+
