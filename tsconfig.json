@@ -1,27 +1,13 @@
 {
-  "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "importHelpers": true,
-    "jsx": "react-jsx",
-    "esModuleInterop": true,
-    "sourceMap": true,
-    "baseUrl": "./",
-    "strict": true,
-    "paths": {
-      "@/*": ["src/*"],
-      "@@/*": ["src/.umi/*"]
-    },
-    "allowSyntheticDefaultImports": true
-  },
+  "extends": "./src/.umi/tsconfig.json",
+  "compilerOptions": {},
   "include": [
     "mock/**/*",
     "src/**/*",
     "config/**/*",
-    "config/index.ts",
-    "src/typing/declare.d.ts"
+    "./**/*.d.ts",
+    "./**/*.ts",
+    "./**/*.tsx",
   ],
   "exclude": [
     "node_modules",
